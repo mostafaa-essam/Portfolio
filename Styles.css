@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family:'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    /*3shan el border ykon demn el size bt3 el width mesh zyada 3aleh*/
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+header{
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+}
+a{
+    text-decoration: none;
+}
+.logo{
+    color:#103dbb ;
+    font-size:1.8em ;/*1.8*16*/
+    font-weight:700 ;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.navigation a{
+ color:#103dbb;
+ font-size: 1.1em;
+ font-weight: 500;
+ padding-left: 30px;
+
+}
+.navigation a:hover{
+    color:black ;
+}
+section{
+    padding: 100px 200px;
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: #011036;
+}
+.main h2{
+    color: white;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+.main h2 span{
+    display: inline-block;
+    margin-top: 15px;
+    color:#103dbb;
+    font-size: 3em;
+    font-weight: 600;
+}
+.main h3{
+    color: white;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 15px 0px;
+}
+.main-btn{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 1em 2.18em;
+    margin-bottom:15px ;
+    /*3shan el hover ya5od w2to*/
+    transition: 0.7s ease;
+}
+.main-btn:hover{
+    background-color: #103dbb;
+    transform: scale(1.1);
+
+}
+.icons a{
+ color: white;
+ font-size: 1.7em;
+ padding-right: 25px;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    color:#103dbb;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.card{
+    background-color: white;
+    width: 21.25em;
+    box-shadow: 0 5px 50px rgb(1 1 1/50%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+.card:hover{
+    transform: scale(1.1);
+
+}
+.icon{
+    color:#103dbb;
+    font-size: 8em;
+    text-align: center;
+
+}
+.info{
+    text-align: center;
+}
+.info h3{
+    color:#103dbb;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 5px;
+}
+.projects{
+    background-color:#011036 ;
+}
+.projects .content{
+    margin-top: 25px;
+}
+.project-card{
+    background-color: white;
+    border: solid 1px white;
+    border-radius: 3px;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    margin: 20px;
+    padding: 5px 8px;
+    transition: 0.7s ease;
+}
+img{
+    display: inline-block;
+    width: 350px;
+    height: 170px;
+}
+
+
+.project-card:hover{
+    transform: scale(1.1);
+}
+
+.project-info{
+    padding: 1em;
+}
+.project-category{
+    font-size: 0.8em;
+    color: black;
+}
+.project-title{
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize;
+    font-weight: 800;
+    margin-top: 10px;
+}
+.more-details{
+    color:#103dbb   
+}
+.more-details:hover{
+    color:black
+}
+.contact-cards {
+ display: flex;
+ justify-content: center;
+}
+.contact-cards .card{
+    width: 18em;
+}
+.footer{
+    background-color: #011036;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 2em;
+}
+.footer-title{
+    font-size: 1.3em;
+    font-weight: 600;
+}
+.footer-title span{
+    color:#103dbb
+}
+/*Responive*/
+@media(max-width:1023px){
+    header{
+        padding: 12px 20px;
+    }
+    .navigation a{
+        padding-left: 5px;
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .title{
+        font-size: 1.8em;
+    }
+    section{
+        padding: 80px 20px;
+    }
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-cards {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+       }
+    .logo{
+        font-size: 1em;
+    }
+    .main h2{
+        font-size: 1.1em;
+    }
+    .main h3{
+        font-size:1.5em ;
+    }
+    .footer{
+        flex-direction: column;
+        align-items: center;
+    }
+   
+}
